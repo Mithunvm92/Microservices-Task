@@ -1,6 +1,6 @@
 # Microservices Containerization Project
 
-## 📌 Overview
+## Overview
 This project demonstrates containerization of a microservices-based Node.js application using Docker and Docker Compose.
 
 It includes 4 services:
@@ -11,7 +11,7 @@ It includes 4 services:
 
 ---
 
-## ⚙️ Tech Stack
+## Tech Stack
 - Node.js
 - Express.js
 - Docker
@@ -19,7 +19,7 @@ It includes 4 services:
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 Microservices/
 ├── user-service/
 ├── product-service/
@@ -31,11 +31,11 @@ Microservices/
 
 ---
 
-## 🚀 How to Run the Project
+## How to Run the Project
 
 ### 1. Build and start containers
 
-```bash
+bash
 docker compose up --build
 
 Check running containers
