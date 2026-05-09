@@ -1,68 +1,69 @@
-# Microservices-Task
+# Microservices Containerization Project
 
-## Overview
-This document provides details on testing various services after running the `docker-compose` file. These services include User, Product, Order, and Gateway Services. Each service has its own endpoints for testing purposes.
+## 📌 Overview
+This project demonstrates containerization of a microservices-based Node.js application using Docker and Docker Compose.
 
----
-
-## Services and Endpoints
-
-### **User Service**
-- **Base URL:** `http://localhost:3000`
-- **Endpoints:**
-  - **List Users:**  
-    ```
-    curl http://localhost:3000/users
-    ```
-    Or open in your browser: [http://localhost:3000/users](http://localhost:3000/users)
+It includes 4 services:
+- User Service (Port 3000)
+- Product Service (Port 3001)
+- Order Service (Port 3002)
+- Gateway Service (Port 3003)
 
 ---
 
-### **Product Service**
-- **Base URL:** `http://localhost:3001`
-- **Endpoints:**
-  - **List Products:**  
-    ```
-    curl http://localhost:3001/products
-    ```
-    Or open in your browser: [http://localhost:3001/products](http://localhost:3001/products)
+## ⚙️ Tech Stack
+- Node.js
+- Express.js
+- Docker
+- Docker Compose
 
 ---
 
-### **Order Service**
-- **Base URL:** `http://localhost:3002`
-- **Endpoints:**
-  - **List Orders:**  
-    ```
-    curl http://localhost:3002/orders
-    ```
-    Or open in your browser: [http://localhost:3002/orders](http://localhost:3002/orders)
+## 📁 Project Structure
+Microservices/
+├── user-service/
+├── product-service/
+├── order-service/
+├── gateway-service/
+├── docker-compose.yml
+└── README.md
+
 
 ---
 
-### **Gateway Service**
-- **Base URL:** `http://localhost:3003/api`
-- **Endpoints:**
-  - **Users:**  
-    ```
-    curl http://localhost:3003/api/users
-    ```
-  - **Products:**  
-    ```
-    curl http://localhost:3003/api/products
-    ```
-  - **Orders:**  
-    ```
-    curl http://localhost:3003/api/orders
-    ```
+## 🚀 How to Run the Project
 
----
+### 1. Build and start containers
 
-## Instructions
-1. Start all services using the `docker-compose` file:
-   ```
-   docker-compose up
-   ```
-2. Once the services are running, use the above endpoints to verify the functionality.
+```bash
+docker compose up --build
 
-Happy testing!
+Check running containers
+docker ps
+
+Service Endpoints
+Service	URL
+User Service	http://localhost:3000
+
+Product Service	http://localhost:3001
+
+Order Service	http://localhost:3002
+
+Gateway Service	http://localhost:3003
+
+Stop Services
+docker compose down
+
+
+
+
+Screenshots:
+Running containers (docker ps)
+
+Browser outputs
+Docker compose running logs
+
+Author
+Mithun
+Microservices Containerization Assignment
+
